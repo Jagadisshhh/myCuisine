@@ -1,0 +1,11 @@
+.login-btn{
+    background-color: tomato !important;
+    border: none !important;
+}
+span {
+    cursor: pointer;
+}
+
+.login-form input{
+    width: 95% !important;
+}

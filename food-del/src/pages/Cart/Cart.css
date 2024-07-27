@@ -1,0 +1,123 @@
+.cart{
+    min-height: 90vh;
+    width: 90%;
+    display: flex;
+}
+.cart-section{
+    flex: 3;
+    padding: 1rem;
+}
+.cart-item{
+    height: 2rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+}
+
+.cart-item .content{
+    height:100%;
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 0 1rem;
+}
+.cart-item .content div{
+    display: flex;
+    padding: 0.7rem 1rem;
+}
+.content p{
+    margin-right: 0.7rem;
+}
+.content p:last-child{
+    cursor: pointer;
+    font-weight: 600;
+    color: grey;
+}
+.cart-item img{
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.cart-item .img-div{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.order-section{
+    flex: 1;
+    padding: 1rem;
+    background-color: #f5f2f2;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* border: 1px solid red; */
+    color: rgb(162, 162, 162);
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+.order-section h2{
+    flex: 1;
+}
+.order-details{
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.order-details div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.order-details button{
+    font-weight: 600;
+    background-color: tomato;
+}
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+    .cart{
+        /* width: 90%;
+        margin-left: auto;
+        margin-right: auto; */
+        display: block;
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+    .cart-section h1,.order-section h2{
+        font-size: 1.3rem;
+    }
+    .cart-item{
+        height: 1.3rem;
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+        /* border: 1px solid black; */
+    }
+    .cart-item img{
+        width: 4rem;
+    }
+    .order-section{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 500px) {
+    .cart-section h1,.order-section h2{
+        font-size: 1.1rem;
+    }
+    .cart-item{
+        height: 1.3rem;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+        /* border: 1px solid black; */
+    }
+    .cart-item img{
+        width: 3rem;
+    }
+}

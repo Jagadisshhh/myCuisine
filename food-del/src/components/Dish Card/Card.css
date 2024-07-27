@@ -1,0 +1,98 @@
+.dish-card{
+    width: 20%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* background-color: #fcae48; */
+    background-color: rgba(246, 242, 242, 0.455);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.item-img{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.20) 0px 3px 6px;
+}
+
+.desc{
+    font-size: 0.9rem;
+    color: #676767;
+}
+
+.price{
+    margin-top: 5px;
+    font-weight: 600;
+    color: tomato;
+}
+
+.increment-div{
+    margin-top: 10px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+}
+.increment, .decrement{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.increment{
+    margin-right: 1rem;
+}
+.count{
+    margin:0 7px;
+}
+.count-buttons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.add-to-cart{
+    border: none;
+    /* height: 1.5rem; */
+    padding: 10px;
+    background-color: #ffa52f;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+    .dish-card{
+        width: 60%;
+        height: auto;
+        padding: 20px;
+    }
+    .add-to-cart{
+        padding: 5px;
+    }
+    .desc{
+        font-size: 0.75rem;
+    }
+    .name{
+        font-size: 0.95rem;
+        margin: 0.5rem 0rem;
+    }
+    .price{
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 400px) {
+    .dish-card{
+        width: 100%;
+    }
+}
