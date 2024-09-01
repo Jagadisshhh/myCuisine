@@ -11,8 +11,7 @@
 .logo{
     cursor: pointer;
 }
-span {
-    /* color: #fb9817; */
+.navbar span {
     color: tomato;
 }
 
