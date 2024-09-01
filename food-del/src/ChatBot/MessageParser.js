@@ -7,7 +7,7 @@ class MessageParser {
   
     parse(message) {
       const regexMap = {
-        // hello: /hello|hi|good morning|good evening|good afternoon|hola/i,
+        hello: /hello|hi|good morning|good evening|good afternoon|hola/i,
         salad: /salad|leaf|green|lettuce|healthy/i,
         rolls: /rolls?|wrap|spring roll|burrito/i,
         desserts: /dessert|sweet|cake|ice cream|pudding/i,

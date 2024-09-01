@@ -8,7 +8,7 @@ class ActionProvider {
   
     handleResponse = (key) => {
       const responses = {
-        // hello: 'Hii, welcome to myCuisine, Im your Cuisine Genie, what mood your tummy is in for today?',
+        hello: 'Hii, welcome to myCuisine, Im your Cuisine Genie, what mood your tummy is in for today?',
         salad: 'How about a fresh Salad? We have several options like Caesar Salad and Garden Salad,check out salad section.',
         rolls: 'You might enjoy our Rolls, including Spring Rolls and Veg Rolls, check out rolls section.',
         desserts: 'If you are looking for something sweet, check out our Desserts like Cake, Ice Cream or check our desserts section.',
